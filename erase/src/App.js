@@ -24,7 +24,7 @@ function App() {
       <div className="text">
         {/* <h1>HELLO</h1> */}
         <CreateTweet textInput={textInput} setTextInput={setTextInput} tweets={tweets} setTweets={setTweets} />
-        <TweetList name={name} message={tweets} />
+        <TweetList name={name} tweets={tweets} setTweets={setTweets} />
         {/* <h1>Hello {name}</h1> */}
         {/* <button onClick={sayHelloHandler}>Click</button> */}
       </div>
