@@ -12,16 +12,19 @@ function App() {
 //   const sayHelloHandler = () => {
 //     setName('Florin Pop');
 //   };
-
+  
+  // State
   const [name, setName] = useState("Nicolò");
   const message = 'Nemo me impune lacessit';
+  const [textInput, setTextInput] = useState('');
+  const [tweets, setTweets] = useState([]);
 
   return (
     <div>
       <div className="text">
         {/* <h1>HELLO</h1> */}
-        <CreateTweet />
-        <TweetList name={name} message={message} />
+        <CreateTweet textInput={textInput} setTextInput={setTextInput} tweets={tweets} setTweets={setTweets} />
+        <TweetList name={name} message={tweets} />
         {/* <h1>Hello {name}</h1> */}
         {/* <button onClick={sayHelloHandler}>Click</button> */}
       </div>
