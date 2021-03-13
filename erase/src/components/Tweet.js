@@ -6,6 +6,7 @@ const Tweet = ({ name, tweet, setTweets, tweets }) => {
         setTweets(tweets.filter((state) => state.id !== tweet.id));
     };
 
+
     return (
         <div className="tweet">
             <h2>Name: {name} </h2>

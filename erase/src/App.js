@@ -1,5 +1,5 @@
 // import state
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // import components
 import TweetList from './components/TweetList';
@@ -12,12 +12,17 @@ function App() {
 //   const sayHelloHandler = () => {
 //     setName('Florin Pop');
 //   };
-  
+
+  // useEffect
   // State
   const [name, setName] = useState("Nicolò");
   const message = 'Nemo me impune lacessit';
   const [textInput, setTextInput] = useState('');
   const [tweets, setTweets] = useState([]);
+
+  useEffect(() => {
+    console.log('we run a function');
+  }, [tweets]);
 
   return (
     <div>
