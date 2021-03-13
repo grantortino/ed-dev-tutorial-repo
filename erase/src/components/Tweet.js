@@ -22,10 +22,11 @@ const TweetStyle = styled.div`
     border-radius: 5px;
     width: 30%;
     background-color: red;
-`
+`;
+
 const H2Crazy = styled.h2`
     color: blue;
     font-size: 50px;
-`
+`;
 
 export default Tweet;
