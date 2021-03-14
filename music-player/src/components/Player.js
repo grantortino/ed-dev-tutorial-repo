@@ -5,14 +5,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 
-const Player = ({ currentSong }) => {
+const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
 
     // reference to access the html tag "audio"
     const audioRef = useRef(null);
 
     // Event Handlers
     const playSongHandler = () => {
-        audioRef.current.play();
+        if(isPlaying) {
+            audioRef.current.pause();
+            setIsPlaying(!isPlaying);
+        } else {
+            audioRef.current.play();
+            setIsPlaying(!isPlaying);
+        }
     };
 
     return(
