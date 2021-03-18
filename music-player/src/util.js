@@ -7,7 +7,7 @@ function chillHop() {
             cover: "https://chillhop.com/wp-content/uploads/2020/06/49f6e32ca521fbad46a1b281e3893cf6254bf11d-1024x1024.jpg",
             artist: "Ian Ewing, Strehlow",
             id: uuidv4(),
-            active: false,
+            active: true,
             color: ['#E4C3BA', '#BCB5C5'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=12997'
         },
