@@ -6,7 +6,7 @@ const Song = ({ currentSong }) => {
         <div className="song-container">
             <img src={currentSong.cover} alt={currentSong.name} />
             <h2>{currentSong.name}</h2>
-            <h2>{currentSong.artist}</h2>
+            <h4>{currentSong.artist}</h4>
         </div>
     )
 };
